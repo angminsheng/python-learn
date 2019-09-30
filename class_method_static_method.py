@@ -25,11 +25,11 @@ class Book:
     return f"This is {self.name} with {self.book_type} and weights {self.weight}g."
   
   @classmethod
-  def hardcover(cls, name, weight):
+  def hardcover(cls, name: str, weight: int) -> "Book":
     return cls(name, cls.TYPE[0], weight+100)
 
   @classmethod
-  def paperback(cls, name, weight):
+  def paperback(cls, name:str, weight:int) -> "Book":
     return cls(name, cls.TYPE[1], weight)
   
 book = Book.hardcover("harry potter", 150)
