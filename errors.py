@@ -22,3 +22,5 @@ else:
   print("All students average calculated.")
 finally:
   print("End of action.")
+
+
